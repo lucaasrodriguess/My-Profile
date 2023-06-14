@@ -78,3 +78,15 @@ button {
   background-color: var(--cor-quartenaria);
   border: 1px solid var(--cor-quartenaria);
 }
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+section {
+  padding: 4rem;
+}
+
+.first-section {
+}
