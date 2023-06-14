@@ -8,7 +8,7 @@
   /*Cores*/
   --cor-primaria: #00000098;
   --cor-secundaria: #e6e8e6;
-  --cor-terciaria: #d52222;
+  --cor-terciaria: #db1010b6;
   --cor-quartenaria: #ced0ce;
   --dark: #000000;
   --cor-hover: #272727;
@@ -61,7 +61,7 @@ nav {
   display: flex;
   gap: 1rem;
 }
-button {
+:is(button, .link-action) {
   padding: 0.6rem;
   font-size: 0.9rem;
   border-radius: 6px;
@@ -87,6 +87,106 @@ main {
 section {
   padding: 4rem;
 }
-
 .first-section {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 2rem;
+  flex-wrap: nowrap;
+  align-items: center;
+  min-height: 650px;
+}
+.first-section > div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  min-width: 300px;
+}
+h1 {
+  font-size: 4rem;
+  color: var(--white);
+  letter-spacing: 6px;
+}
+strong {
+  color: var(--cor-terciaria);
+}
+.first-section p {
+  color: var(--white);
+  max-width: 600px;
+  text-align: justify;
+}
+.link-action {
+  text-decoration: none;
+  width: 200px;
+}
+.box-img-main {
+  max-width: 450px;
+  padding: 1rem;
+}
+.img-profile {
+  border-radius: 50%;
+  width: 100%;
+}
+:is(.second-section, .fourth-section) {
+  background-color: var(--cor-terciaria);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.second-section ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  letter-spacing: 2px;
+}
+.second-section li {
+  color: var(--cor-quartenaria);
+  letter-spacing: 2px;
+}
+.second-section ul li {
+  font-weight: bold;
+}
+.second-section ul li:hover {
+  color: var(--dark);
+  transition: 0.5s;
+  cursor: default;
+}
+.title {
+  color: var(--dark);
+}
+.third-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.third-section > div {
+  display: flex;
+  gap: 4rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.third-section > div img {
+  width: 200px;
+  border-radius: 10px;
+}
+.third-section > div p {
+  max-width: 600px;
+  color: var(--white);
+  text-align: justify;
+}
+footer {
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+footer > div {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
 }
