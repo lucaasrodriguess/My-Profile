@@ -18,7 +18,7 @@
   --fonte-principal: "Montserrat", sans-serif;
 }
 body {
-  background-color: var(--cor-primaria);
+  background-color: var(--cor-quartenaria);
   height: 100vh;
   font-family: var(--fonte-principal);
 }
@@ -29,7 +29,7 @@ header {
   gap: 1rem;
   flex-wrap: wrap;
   padding: 0.8rem;
-  background-color: var(--cor-primaria);
+  background-color: var(--cor-terciaria);
   min-height: 50px;
 }
 .box-img-header {
@@ -48,11 +48,11 @@ nav {
 }
 .nav-links {
   text-decoration: none;
-  color: var(--cor-quartenaria);
+  color: var(--dark);
   font-weight: 400;
 }
 .nav-links:hover {
-  color: var(--cor-primaria);
+  color: var(--cor-quartenaria);
   transition: 0.4s;
   text-decoration: underline;
   font-weight: 800;
@@ -71,8 +71,8 @@ nav {
 }
 .btn-action {
   background-color: transparent;
-  border: 1px solid var(--white);
-  color: var(--white);
+  border: 1px solid var(--dark);
+  color: var(--dark);
 }
 .btn-action:hover {
   background-color: var(--cor-quartenaria);
@@ -103,14 +103,14 @@ section {
 }
 h1 {
   font-size: 4rem;
-  color: var(--white);
+  color: var(--dark);
   letter-spacing: 6px;
 }
 strong {
   color: var(--cor-terciaria);
 }
 .first-section p {
-  color: var(--white);
+  color: var(--dark);
   max-width: 600px;
   text-align: justify;
 }
@@ -176,7 +176,7 @@ strong {
 }
 .third-section > div p {
   max-width: 600px;
-  color: var(--white);
+  color: var(--dark);
   text-align: justify;
 }
 footer {
@@ -189,4 +189,20 @@ footer > div {
   display: flex;
   justify-content: center;
   gap: 2rem;
+}
+#my-projects-list {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+#my-projects-list a {
+  text-decoration: none;
+  color: var(--dark);
+}
+#my-projects-list a:hover {
+  color: var(--cor-quartenaria);
+  transition: 0.4s;
 }
